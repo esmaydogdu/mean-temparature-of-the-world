@@ -26,7 +26,7 @@ async function chartIt() {
     data: {
       labels: data.xs,
       datasets: [{
-        label: '# of Votes',
+        label: 'Combined Land-Surface Air and Sea-Surface Water Temparature in Celcius',
         data: data.ys,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgba(255, 99, 132, 1)',
