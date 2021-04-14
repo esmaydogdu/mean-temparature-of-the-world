@@ -16,7 +16,7 @@ async function getData() {
     ys.push(parseFloat(temp) + 14)
     console.log(year, temp)
   })
-  return {xs, ys}
+  return { xs, ys }
 }
 async function chartIt() {
   const data = await getData();
@@ -35,15 +35,15 @@ async function chartIt() {
     },
     options: {
       scales: {
-          y: {
-              ticks: {
-                  callback: function(value, index, values) {
-                      return  value + '°';
-                  }
-              }
+        y: {
+          ticks: {
+            callback: function (value, index, values) {
+              return value + '°';
+            }
           }
+        }
       }
-  }
+    }
   });
 }
 
